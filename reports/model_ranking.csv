@@ -1,0 +1,2 @@
+model_name,sampling_strategy,training_time_seconds,roc_auc,pr_auc,f1,precision,recall,accuracy,balanced_accuracy,specificity,sensitivity,mcc,true_positives,true_negatives,false_positives,false_negatives
+logistic_regression,smote,14.8708,0.8397,0.6415,0.6149,0.5185,0.7554,0.7495,0.7514,0.7473,0.7554,0.4557,281,772,261,91

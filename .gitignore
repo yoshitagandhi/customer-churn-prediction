@@ -1,0 +1,77 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- IDE settings ---
+.vscode/
+.idea/
+*.swp
+
+# --- Logs ---
+logs/*.log
+*.log
+
+# --- Datasets ---
+# Keep the small IBM Telco source dataset so the demo is reproducible.
+data/processed/*
+data/external/*
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# --- Generated reports ---
+reports/figures/*
+reports/metrics/*
+!reports/figures/.gitkeep
+!reports/metrics/.gitkeep
+
+# --- Model artifacts ---
+# Keep only artifacts required by the deployed demo.
+models/*
+!models/.gitkeep
+!models/best_model.pkl
+!models/preprocessor.pkl
+!models/threshold_config.json
+
+# Streamlit configuration and styling are source files and should be tracked.
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Testing and tooling caches ---
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+htmlcov/
+.coverage
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+
+# Python wheels
+*.whl
+
+# Distribution
+*.egg
+
+# macOS metadata
+.AppleDouble
+.LSOverride
+
+# Windows
+Desktop.ini

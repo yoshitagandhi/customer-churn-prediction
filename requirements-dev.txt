@@ -1,0 +1,11 @@
+-r requirements.txt
+
+pytest>=8.4
+pytest-cov>=6.2
+
+black>=25.0
+ruff>=0.12
+
+pre-commit>=4.0
+
+mypy>=1.17

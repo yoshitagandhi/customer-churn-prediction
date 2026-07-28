@@ -1,0 +1,83 @@
+{
+  "report_version": 1,
+  "generated_at": "2026-07-21T22:05:15.655986+00:00",
+  "dataset_overview": {
+    "rows": 7043,
+    "columns": 21,
+    "memory_usage_mb": 1.864,
+    "target_column": "Churn",
+    "target_distribution": {
+      "No": {
+        "count": 5174,
+        "percentage": 73.46
+      },
+      "Yes": {
+        "count": 1869,
+        "percentage": 26.54
+      }
+    }
+  },
+  "validation_summary": {
+    "passed_checks": [
+      "dataset_shape",
+      "required_columns",
+      "duplicate_column_names",
+      "duplicate_rows",
+      "duplicate_identifiers",
+      "missing_values",
+      "target_validation"
+    ],
+    "warnings": [
+      {
+        "check": "datatype_consistency",
+        "message": "Columns expected to be numeric are stored as non-numeric: ['TotalCharges']"
+      }
+    ],
+    "failed_checks": []
+  },
+  "missing_values": {},
+  "duplicate_summary": {
+    "total_rows": 7043,
+    "duplicate_row_count": 0,
+    "duplicate_customer_id_count": 0
+  },
+  "datatype_summary": {
+    "numeric": [
+      "SeniorCitizen",
+      "tenure",
+      "MonthlyCharges"
+    ],
+    "categorical": [
+      "customerID",
+      "gender",
+      "Partner",
+      "Dependents",
+      "PhoneService",
+      "MultipleLines",
+      "InternetService",
+      "OnlineSecurity",
+      "OnlineBackup",
+      "DeviceProtection",
+      "TechSupport",
+      "StreamingTV",
+      "StreamingMovies",
+      "Contract",
+      "PaperlessBilling",
+      "PaymentMethod",
+      "TotalCharges",
+      "Churn"
+    ],
+    "binary": [
+      "gender",
+      "SeniorCitizen",
+      "Partner",
+      "Dependents",
+      "PhoneService",
+      "PaperlessBilling",
+      "Churn"
+    ]
+  },
+  "recommendations": [
+    "Convert 'TotalCharges' to a numeric data type (currently 'str')."
+  ]
+}

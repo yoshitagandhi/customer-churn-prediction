@@ -1,0 +1,107 @@
+################################################################################
+# Streamlit Configuration
+#
+# Project : Customer Churn Prediction Platform
+# Purpose : Production-ready Streamlit configuration
+################################################################################
+
+################################################################################
+# Theme
+################################################################################
+
+[theme]
+
+# ----------------------------------------------------------------------
+# Brand Color
+# Used for buttons, sliders, checkboxes, links, progress bars
+# ----------------------------------------------------------------------
+
+primaryColor = "#6675F5"
+
+# ----------------------------------------------------------------------
+# Application Background
+# ----------------------------------------------------------------------
+
+backgroundColor = "#F4F7FF"
+
+# ----------------------------------------------------------------------
+# Card / Sidebar Background
+# ----------------------------------------------------------------------
+
+secondaryBackgroundColor = "#FFFFFF"
+
+# ----------------------------------------------------------------------
+# Primary Text
+# ----------------------------------------------------------------------
+
+textColor = "#18223B"
+
+# ----------------------------------------------------------------------
+# Font
+# Options:
+# "sans serif"
+# "serif"
+# "monospace"
+# ----------------------------------------------------------------------
+
+font = "sans serif"
+
+################################################################################
+# Server Configuration
+################################################################################
+
+[server]
+
+# Disable CORS for local development
+enableCORS = false
+
+# Enable XSRF protection
+enableXsrfProtection = true
+
+# Hide browser automatically opening
+headless = true
+
+# Keep the active session stable.  The application writes logs and evaluation
+# artifacts under this repository; rerunning on every file change can otherwise
+# create a self-triggering rerun loop and leave the browser on its loading page.
+runOnSave = true
+
+# Generated runtime artifacts are not source files and must not trigger a
+# Streamlit file-watcher reload.
+folderWatchBlacklist = ["logs", "reports", "__pycache__", ".git"]
+
+# Maximum upload size (MB)
+maxUploadSize = 500
+
+# Maximum websocket message size (MB)
+maxMessageSize = 500
+
+################################################################################
+# Browser
+################################################################################
+
+[browser]
+
+# Disable telemetry
+gatherUsageStats = false
+
+################################################################################
+# Client
+################################################################################
+
+[client]
+
+# Cleaner production interface
+toolbarMode = "minimal"
+
+# Keep sidebar navigation available
+showSidebarNavigation = true
+
+################################################################################
+# Global
+################################################################################
+
+[global]
+
+# Development mode
+developmentMode = false

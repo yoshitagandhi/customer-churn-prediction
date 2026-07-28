@@ -1,0 +1,25 @@
+[
+  {
+    "experiment_id": "logistic_regression_none_443b1130",
+    "model_name": "logistic_regression",
+    "sampling_strategy": "none",
+    "preprocessing_version": "0.1.0",
+    "hyperparameters": {
+      "solver": "liblinear",
+      "penalty": "l2",
+      "C": 1
+    },
+    "validation_metrics": {
+      "accuracy": 0.8028,
+      "roc_auc": 0.8405,
+      "precision": 0.6715,
+      "recall": 0.5,
+      "f1": 0.5732,
+      "pr_auc": 0.642
+    },
+    "training_time_seconds": 9.5187,
+    "timestamp": "2026-07-28T01:28:12.234697+00:00",
+    "random_seed": 42,
+    "notes": ""
+  }
+]
